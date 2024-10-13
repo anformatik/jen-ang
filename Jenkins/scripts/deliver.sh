@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 npm run ng build
-npm run ng serve &
+npm run ng serve --host 0.0.0.0 --port 4200 &
 sleep 1
 echo $! > .pidfile
 
