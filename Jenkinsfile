@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker { image 'localhost:6600/mhm-nginx' }
+    docker { image 'host.docker.internal:6600/mhm-nginx' }
   }
   stages {
     stage('Test') {
